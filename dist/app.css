@@ -111,7 +111,9 @@ body {
   position: absolute;
   left: -10%;
   z-index: 2;
-  transition: ease-in 2s;
+}
+.main .is-active {
+  animation: wire-animation 2s;
 }
 .main__phone {
   width: 300px;
@@ -163,4 +165,13 @@ body {
   position: absolute;
   bottom: -12%;
   left: 42%;
+}
+
+@keyframes wire-animation {
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: -10%;
+  }
 }/*# sourceMappingURL=app.css.map */
