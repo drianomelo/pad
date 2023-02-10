@@ -5,10 +5,15 @@
   left: 2%;
   img {
     width: 50px;
-    transition: all 0.3s;
 
     &:hover {
-      transform: scale(1.1);
+      animation: logo-animation .5s ease-in-out alternate infinite;
     }
+  }
+}
+
+@keyframes logo-animation {
+  to {
+    transform: scale(1.1);
   }
 }

@@ -3,7 +3,8 @@
   --clr-white: #fff;
   --clr-blue: #3cc2ef;
   --clr-blue-dark: #0074be;
-  --clr-black-dark: #402f44;
+  --clr-black: #402f44;
+  --clr-black-dark: #2c222e;
   --clr-black-opacity: #402f443f;
   --clr-black-light: #656982;
   --clr-gray: #6c6c6c;
@@ -39,12 +40,16 @@ body {
 }
 .logo img {
   width: 50px;
-  transition: all 0.3s;
 }
 .logo img:hover {
-  transform: scale(1.1);
+  animation: logo-animation 0.5s ease-in-out alternate infinite;
 }
 
+@keyframes logo-animation {
+  to {
+    transform: scale(1.1);
+  }
+}
 .main {
   max-width: 425px;
   margin: 0 auto;
@@ -57,9 +62,9 @@ body {
   position: relative;
   width: 350px;
   height: 350px;
-  border: 8px solid var(--clr-black-dark);
+  border: 8px solid var(--clr-black);
   border-radius: 1rem;
-  box-shadow: 5px 5px 0 var(--clr-black-dark);
+  box-shadow: 7px 7px 0 var(--clr-black-dark);
   background-color: var(--clr-blue);
   padding: 1rem;
   display: flex;
@@ -90,16 +95,16 @@ body {
   height: 5rem;
   border-radius: 1rem;
   background-color: var(--clr-black-light);
-  box-shadow: 4px 4px 0 var(--clr-black-dark);
-  border: 5px solid var(--clr-black-dark);
+  box-shadow: 4px 4px 0 var(--clr-black);
+  border: 5px solid var(--clr-black);
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 900;
-  color: var(--clr-black-dark);
+  color: var(--clr-black);
   cursor: pointer;
 }
 .main__item:active {
-  box-shadow: inset 5px 5px 0 var(--clr-black-dark);
+  box-shadow: inset 5px 5px 0 var(--clr-black);
   font-size: 0.95rem;
 }/*# sourceMappingURL=app.css.map */

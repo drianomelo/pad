@@ -10,9 +10,9 @@
     position: relative;
     width: 350px;
     height: 350px;
-    border: 8px solid var(--clr-black-dark);
+    border: 8px solid var(--clr-black);
     border-radius: 1rem;
-    box-shadow: 5px 5px 0 var(--clr-black-dark);
+    box-shadow: 7px 7px 0 var(--clr-black-dark);
     background-color: var(--clr-blue);
     padding: 1rem;
     display: flex;
@@ -46,28 +46,27 @@
     height: 5rem;
     border-radius: 1rem;
     background-color: var(--clr-black-light);
-    box-shadow: 4px 4px 0 var(--clr-black-dark);
-    border: 5px solid var(--clr-black-dark);
+    box-shadow: 4px 4px 0 var(--clr-black);
+    border: 5px solid var(--clr-black);
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 900;
-    color: var(--clr-black-dark);
+    color: var(--clr-black);
     cursor: pointer;
 
     &:active {
-      box-shadow: inset 5px 5px 0 var(--clr-black-dark);
-      font-size: .95rem;
+      box-shadow: inset 5px 5px 0 var(--clr-black);
+      font-size: 0.95rem;
     }
-
   }
 
   // &__wire {
   //   width: 400px;
   //   height: 30px;
   //   background-color: var(--clr-black-light);
-  //   border-top: 8px solid var(--clr-black-dark);
-  //   border-bottom: 8px solid var(--clr-black-dark);
+  //   border-top: 8px solid var();
+  //   border-bottom: 8px solid var();
   //   position: relative;
   //   z-index: 1;
   // }
@@ -85,7 +84,7 @@
   //   width: 300px;
   //   height: 500px;
   //   background-color: var(--clr-blue);
-  //   border: 8px solid var(--clr-black-dark);
+  //   border: 8px solid var();
   //   border-radius: 1rem;
   //   position: relative;
   //   z-index: 1;
@@ -95,7 +94,7 @@
 
   //   &::before {
   //     content: "";
-  //     background-color: var(--clr-black-dark);
+  //     background-color: var();
   //     border-radius: 0 0 1rem 1rem;
   //     width: 50%;
   //     height: 30px;
@@ -120,7 +119,7 @@
   // &__screen {
   //   width: 90%;
   //   height: 78%;
-  //   background-color: var(--clr-black-dark);
+  //   background-color: var();
   //   position: relative;
   //   &::after {
   //     content: "";
@@ -129,7 +128,7 @@
   //     height: 2.5rem;
   //     border-radius: 50%;
   //     background-color: var(--clr-blue);
-  //     border: 5px solid var(--clr-black-dark);
+  //     border: 5px solid var();
   //     position: absolute;
   //     bottom: -12%;
   //     left: 42%;
