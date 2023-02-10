@@ -57,6 +57,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.main__title {
+  color: var(--clr-black);
+  text-transform: uppercase;
+  font-weight: 900;
 }
 .main__sound {
   position: relative;
@@ -71,6 +78,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 10;
+  margin-top: 2rem;
 }
 .main__sound::after {
   content: "";
@@ -105,7 +113,11 @@ body {
   color: var(--clr-black);
   cursor: pointer;
 }
-.main__item:active {
+.main__item--active, .main__item:active {
   box-shadow: inset 5px 5px 0 var(--clr-black);
   font-size: 0.75rem;
+}
+.main__item:focus {
+  outline: none;
+  color: var(--clr-red);
 }/*# sourceMappingURL=app.css.map */

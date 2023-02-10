@@ -12,4 +12,15 @@ for (let cont = 0; cont < listaDeTeclas.length; cont++) {
   tecla.onclick = () => {
     tocaSom(idAudio);
   };
+
+  tecla.onkeydown = (event) => {
+    console.log(event);
+    if (event.KeyCode === "13") {
+      tecla.classList.add("main__item--active");
+    }
+  };
+
+  tecla.onkeyup = () => {
+    tecla.classList.remove("main__item--active");
+  };
 }

@@ -5,6 +5,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  &__title {
+    color: var(--clr-black);
+    text-transform: uppercase;
+    font-weight: 900;
+  }
 
   &__sound {
     position: relative;
@@ -19,6 +27,7 @@
     justify-content: center;
     align-items: center;
     z-index: 10;
+    margin-top: 2rem;
 
     &::after {
       content: "";
@@ -51,14 +60,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-weight: 900;
     color: var(--clr-black);
     cursor: pointer;
 
+    &--active,
     &:active {
       box-shadow: inset 5px 5px 0 var(--clr-black);
       font-size: 0.75rem;
+    }
+
+    &:focus {
+      outline: none;
+      color: var(--clr-red);
     }
   }
 
