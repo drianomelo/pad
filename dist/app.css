@@ -6,6 +6,7 @@
   --clr-black-dark: #402f44;
   --clr-black-opacity: #402f443f;
   --clr-black-light: #656982;
+  --clr-gray: #6c6c6c;
   --clr-red: #ed6077;
   --clr-green: #60ed77;
 }
@@ -90,10 +91,16 @@ body {
   background-color: var(--clr-black-light);
   box-shadow: 4px 4px 0 var(--clr-black-dark);
   border: 5px solid var(--clr-black-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  color: var(--clr-black-dark);
   cursor: pointer;
 }
 .main__item:active {
-  box-shadow: inset 4px 4px 0 var(--clr-black-dark);
+  box-shadow: inset 5px 5px 0 var(--clr-black-dark);
+  font-size: 0.95rem;
 }
 .main__wire {
   width: 400px;
@@ -111,9 +118,6 @@ body {
   position: absolute;
   left: -10%;
   z-index: 2;
-}
-.main .is-active {
-  animation: wire-animation 2s;
 }
 .main__phone {
   width: 300px;
@@ -165,13 +169,4 @@ body {
   position: absolute;
   bottom: -12%;
   left: 42%;
-}
-
-@keyframes wire-animation {
-  50% {
-    left: 100%;
-  }
-  100% {
-    left: -10%;
-  }
 }/*# sourceMappingURL=app.css.map */
