@@ -51,13 +51,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: .8rem;
     font-weight: 900;
     color: var(--clr-black);
     cursor: pointer;
 
     &:active {
       box-shadow: inset 5px 5px 0 var(--clr-black);
-      font-size: 0.95rem;
+      font-size: 0.75rem;
     }
   }
 
