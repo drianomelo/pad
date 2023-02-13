@@ -13,14 +13,13 @@ for (let cont = 0; cont < listaDeTeclas.length; cont++) {
     tocaSom(idAudio);
   };
 
-  tecla.onkeydown = (event) => {
-    console.log(event);
-    if (event.KeyCode === "13") {
+  tecla.onkeydown = function (event) {
+    if (event.code === "Space" || event.code === "Enter") {
       tecla.classList.add("main__item--active");
     }
   };
 
-  tecla.onkeyup = () => {
+  tecla.onkeyup = function () {
     tecla.classList.remove("main__item--active");
   };
 }
